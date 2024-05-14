@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: FoodService
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/JWT_Food
+    username: root
+    password: Jayesh@123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
